@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hackout 3: analysis and modeling tools for emergency outbreak response</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1">
+    <meta name="author" content="Karthik Ram, Thibaut Jombart, Rich FitzJohn">
+    <meta name="description" content="hackout 3 website">
+    <meta name="keywords" content="hackout 3 hackout3 website official registration hackathon outbreak epidemics R">
+    <link rel="icon shortcut" href="images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/main.css" media="all">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  </head>
+  <body>
+
+    <header>
+      <div class="logo-date-wrap">
+	<a href="http://hackout3.github.io/"><img src="images/logo.png"  alt="Hackout logo" class="site-logo"></a>
+	<div class="date-location-wrap">
+          <p class="byline">Hackout 3</p>
+          <p class="byline-other">20-24 June 2016 • Berkeley, CA • USA</p>
+	  <br>
+          <p class="byline-italic"><a href="#apply">Applications are now closed.</a></p>
+	  <br>
+	</div>
+      </div>
+
+      <img src="images/banner.jpg" alt="banner" class="intro-image-small">
+
+      <nav class="site-nav">
+	<a href="#participants" class="nav-link">Who</a>
+	<a href="#schedule" class="nav-link">Plan</a>
+	<a href="#sponsors" class="nav-link">Sponsors</a>
+	<a href="#venue" class="nav-link">Venue</a>
+      </nav>
+    </header>
+
+    <img src="images/banner.jpg" alt="" class="intro-image">
+
+    <div class="intro-wrap">
+      <section class="intro">
+	<div class="title-col">
+	  <h2 class="intro-offset">Hackout3: analysis and modelling tools for emergency outbreak response</h2>
+	  <p>
+            The recent Ebola virus disease outbreak in West Africa has been a terrible reminder of the
+            necessities of rapid evaluation and response to emerging infectious disease threats. For
+            such response to be fully informed, complex epidemiological data including dates of symptom
+            onsets, locations of the cases, hospitalisation, and contact tracing information have to be
+            analysed in near real time. Unfortunately, some of the tools required to bridge the gap
+            between data collection in regional offices and advanced statistical modelling are still
+            lacking.
+	  </p>
+	  <br>
+	  <p>
+	    <i>Hackout 3</i> will aim to reduce this gap by bringing together field epidemiologists, decision
+	    makers, modellers and computer scientists to create free, open-source resources for the real-time
+	    monitoring of disease outbreaks. While new developments will largely build upon recent progresses
+	    for epidemics analysis using the R software, other technologies will also be considered, including
+	    existing tools for data collection (e.g. EpiInfo VHF), graph databases (Neo4j) and interactive,
+	    web-based graphs (e.g. htmlwidgets, shiny, google charts).
+            <br>
+	  </p>
+	</div>
+      </section>
+    </div>
+
+
+    <section class="participants">
+      <a name="participants" class="section-jump"> </a>
+      <div class="title-col">
+	<h2>The Participants</h2>
+	<p>We are assembling an exciting team of people interested in developing the next generation of
+	  tools for outbreak response, including modellers, statisticians, developers and public health
+	  workers.</p>
+	<p>Note: this list will be growing over the next few days as participants are being
+	  confirmed. The event should involve 30-40 people in total.</p>
+      </div>
+      <div class="further-col">
+	<div class="participant-row">
+
+	  <div class="participant thibaut-jombart">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Thibaut Jombart</h3>
+	    <p><a>[organizer]</a></p>
+	    <p class="participant-affiliation"><a href="http://www.imperial.ac.uk/people/t.jombart">Imperial
+		College London</a></p>
+	    <p><a href="https://sites.google.com/site/thibautjombart/" title="Thibaut
+									      Jombart">// website</a></p>
+	    <p><a href="https://github.com/thibautjombart/"><img src="images/github-mark.png"
+								 alt="Github profile"></a>
+	      <a href="https://twitter.com/TeebzR"><img src="images/twitter.png" 
+							alt="Twitter profile" width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant karthik-ram">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Karthik Ram</h3>
+	    <p><a>[organizer]</a></p>
+            <p class="participant-affiliation"><a href="http://bids.berkeley.edu/">Berkeley Institute
+		for Data Science (USA)</a>, <a href="http://ropensci.org">rOpenSci</a></p>
+	    <p><a href="http://karthik.io/" title="Karthik Ram">// website</a></p>
+	    <p><a href="https://github.com/karthik/"><img src="images/github-mark.png" alt="Github
+											    profile"></a>
+	      <a href="https://twitter.com/_inundata"><img src="images/twitter.png" alt="Twitter profile"
+							   width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant dean-attali">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Dean Attali</h3>
+            <p class="participant-affiliation"><a href="https://www.ubc.ca/">University of British Columbia</a></p>
+	    <p><a href="http://deanattali.com/" title="Dean Attali">// website</a></p>
+	    <p><a href="https://github.com/daattali"><img src="images/github-mark.png" alt="Github
+											    profile"></a>
+	      <a href="https://twitter.com/daattali"><img src="images/twitter.png" alt="Twitter profile"
+							  width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant marc-baguelin">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Marc Baguelin</h3>
+	    <p><a>[co-organizer]</a></p>
+	    <p class="participant-affiliation">Public Health
+	      England & <a href="http://www.lshtm.ac.uk/aboutus/people/baguelin.marc">London School of
+		Hygiene and Tropical Medicine (UK)</a></p>
+	    <p><a href="https://github.com/MJomaba/"><img src="images/github-mark.png" alt="Github
+											    profile"></a>
+	      <a href="https://twitter.com/MarcBaguelin"><img src="images/twitter.png" alt="Twitter profile"
+							      width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant mika-braginsky">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Mika Braginsky</h3>
+            <p class="participant-affiliation"><a href="http://stanford.edu/">Stanford University</a></p>
+	    <p><a href="https://mikabr.github.io/" title="Mika Braginsky">// website</a></p>
+	    <p><a href="https://github.com/mikabr"><img src="images/github-mark.png" alt="Github
+											  profile"></a>
+	      <a href="https://twitter.com/mbraginsky"><img src="images/twitter.png" alt="Twitter profile"
+							    width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant finlay-campbell">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Finlay Campbell</h3>
+            <p class="participant-affiliation"><a href="http://www.imperial.ac.uk/">Imperial College London</a></p>
+            <p><a href="github.com/finlaycampbell"><img src="images/github-mark.png"
+							alt="Github profile"></a>
+	      <a href="https://twitter.com/fCampbell93"><img src="images/twitter.png" alt="Twitter profile"
+							     width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant simon-cauchemez">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Simon Cauchemez</h3>
+	    <p><a>[co-organizer]</a></p>
+            <p class="participant-affiliation">
+              <a href="https://research.pasteur.fr/en/team/mathematical-modelling-of-infectious-diseases/">Institut
+		Pasteur, Paris (France)<a></p>
+	    <!-- <p><img src="images/github-mark.png" alt="Github -->
+	    <!-- profile"> -->
+	    <!-- <img src="images/twitter.png" alt="Twitter profile" -->
+	    <!-- width="35px" height="35px"></p> -->
+	  </div>
+
+	  <div class="participant anne-cori">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Anne Cori</h3>
+            <p class="participant-affiliation"><a href="http://www.imperial.ac.uk/">Imperial
+		College London</a></p>
+	    <p><a href="http://www.imperial.ac.uk/people/a.cori" title="Anne Cori">// website</a></p>
+            <p><a href="https://github.com/annecori/"><img src="images/github-mark.png"
+							   alt="Github profile"></a>
+	  </div>
+
+	  <div class="participant thomas-crellen">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Thomas Crellen</h3>
+            <p class="participant-affiliation"><a href="http://www.sanger.ac.uk/">Wellcome Trust Sanger
+		Institute</a> & 
+	      <a href="http://www.imperial.ac.uk/">Imperial
+		College London</a></p>
+	    <p><a href="http://www.sanger.ac.uk/people/directory/crellen-thomas" title="Thomas Crellen">// website</a></p>
+            <p><a href="https://github.com/tc13"><img src="images/github-mark.png"
+							   alt="Github profile"></a>
+	      <a href="https://twitter.com/TomCrellen"><img src="images/twitter.png" alt="Twitter profile"
+							    width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant elisabeth-dahlqwist">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Elisabeth Dahlqwist</h3>
+            <p class="participant-affiliation"><a href="http://ki.se/en/">Karolinska Institutet</a></p>
+	    <p><a href="http://ki.se/en/people/elisda" title="Elisabeth Dahlqwist">// website</a></p>
+	  </div>
+
+	  <div class="participant inger-damon">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Inger Damon</h3>
+            <p class="participant-affiliation"><a href="http://www.cdc.gov">Centres for Disease Control and Prevention</a></p>
+	    <p><a href="http://www.cdc.gov/media/spokesperson/damon/index.html" title="Inger Damon">// website</a></p>
+	  </div>
+
+	  <div class="participant alex-demarsh">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Alex Demarsh</h3>
+            <p class="participant-affiliation"><a href="http://mchi.mcgill.ca/about-us/surveillance/">McGill
+		University</a> and <a href="http://www.phac-aspc.gc.ca/">Public Health Agency of Canada</a></p>
+            <p><a href="https://github.com/alexdemarsh"><img src="images/github-mark.png"
+							     alt="Github profile"></a>
+	  </div>
+
+	  <div class="participant rich-fitzjohn">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Rich FitzJohn</h3>
+	    <p><a>[co-organizer]</a></p>
+            <p class="participant-affiliation">Imperial College
+              London, <a href="http://ropensci.org">rOpenSci (UK)</a></p>
+	    <p><a href="http://richfitz.github.io/" title="Rich FitzJohn">// website</a></p>
+	    <p><a href="https://github.com/richfitz/"><img src="images/github-mark.png" alt="Github
+											     profile"></a>
+	      <a href="https://twitter.com/rgfitzjohn"><img src="images/twitter.png" alt="Twitter profile"
+							    width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant simon-frost">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Simon Frost</h3>
+            <p class="participant-affiliation"><a href="http://www.cam.ac.uk">University of Cambridge</a></p>
+	    <p><a href="http://www.vet.cam.ac.uk/directory/sdf22@cam.ac.uk" title="Simon Frost">// website</a></p>
+	    <p><a href="https://github.com/sdwfrost"><img src="images/github-mark.png" alt="Github
+											    profile"></a>
+	      <a href="https://twitter.com/sdwfrost"><img src="images/twitter.png" alt="Twitter profile"
+							  width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant james-hayward">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">James Hayward</h3>
+	    <p><a>[admin & logistics]</a></p>
+	    <p class="participant-affiliation"><a href="https://www1.imperial.ac.uk/publichealth/departments/ide/outbreaks/">MRC
+		Centre for Outbreak Analysis and Modelling</a></p>
+	  </div>
+
+	  <div class="participant zhian-kamvar">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Zhian Kamvar</h3>
+	    <p class="participant-affiliation"><a href="http://bpp.oregonstate.edu/">Oregon State University</a></p>
+	    <p><a href="http://blogs.oregonstate.edu/inspiration/" title="Zhian Kamvar">// website</a></p>
+	    <p><a href="https://github.com/zkamvar"><img src="images/github-mark.png" alt="Githubprofile"></a>
+	      <a href="https://twitter.com/zkamvar"><img src="images/twitter.png" alt="Twitter profile"
+							 width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant don-klinkenberg">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Don Klinkenberg</h3>
+	    <p class="participant-affiliation"><a href="http://www.rivm.nl/en/">National Institute for Public Health and the Environment</a> (The Netherlands) </p>
+	    <p><a href="http://www.rivm.nl/en/About_RIVM/Knowledge_and_expertise/Experts_and_expertise/Related_information/Modelling_Infectious_Diseases/D_Don_Klinkenberg_PhD" title="Don Klinkenberg">// website</a></p>
+	    <p><a href="https://github.com/donkeyshot"><img src="images/github-mark.png" alt="Githubprofile"></a>
+	      <a href="https://twitter.com/donkeyshot"><img src="images/twitter.png" alt="Twitter profile"
+							    width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant john-lees">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">John Lees</h3>
+	    <p class="participant-affiliation"><a href="http://www.sanger.ac.uk">Wellcome Trust Sanger
+		Institute</a></p>
+	    <p><a href="http://www.johnlees.me" title="John Lees">// website</a></p>
+	    <p><a href="https://github.com/johnlees"><img src="images/github-mark.png" alt="Githubprofile"></a>
+	      <a href="https://twitter.com/johnlees6"><img src="images/twitter.png" alt="Twitter profile"
+							   width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant justin-lessler">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Justin Lessler</h3>
+	    <p><a>[co-organizer]</a></p>
+	    <p class="participant-affiliation"><a href="http://www.jhsph.edu/faculty/directory/profile/4965/justin-lessler">Johns
+	    Hopkins - Blomberg School of Public Health</a></p>
+	    <p><a href="https://github.com/jlessler/"><img src="images/github-mark.png" alt="Githubprofile"></a>
+	      <a href="https://twitter.com/justinlessler"><img src="images/twitter.png" alt="Twitter profile"
+							       width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant shikun-li">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Shikun Li</h3>
+	    <p class="participant-affiliation"><a href="http://www.ericsson.com/">Ericsson</a></p>
+	    <p><a href="http://se.linkedin.com/in/ShikunLi" title="Shikun Li">// website</a></p>
+	    <p><a href="https://github.com/kanedglsk"><img src="images/github-mark.png" alt="Githubprofile"></a>
+	  </div>
+
+
+	  <div class="participant yu-luo">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Yu Luo</h3>
+	    <p class="participant-affiliation"><a href="www.mcgill.ca">McGill University</a>
+	    & <a href="http://mchi.mcgill.ca/about-us/surveillance/">McGill Clinical & Health Informatics</a></p>
+	    <p><a href="https://ca.linkedin.com/in/yu-terry-luo-26854a90" title="Yu Luo">// website</a></p>
+	  </div>
+
+	  <div class="participant evgenia-markvardt">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Evgenia Markvardt</h3>
+	    <p><a>[admin & logistics]</a></p>
+	    <p class="participant-affiliation"><a href="https://www1.imperial.ac.uk/publichealth/departments/ide/outbreaks/">MRC
+		Centre for Outbreak Analysis and Modelling</a></p>
+	  </div>
+
+	  <div class="participant jennifer-myers">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Jennifer Myers</h3>
+	    <p class="participant-affiliation"><a href="http://www.cdph.ca.gov">California Department of Public Health</a></p>
+	    <p><a href="https://www.linkedin.com/in/jennifer-f-myers-a9073613" title="Jennifer Myers">// website</a></p>
+	  </div>
+
+	  <div class="participant vp-nagraj">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Vijay Peter Nagraj</h3>
+	    <p class="participant-affiliation"><a href="http://www.virginia.edu/">University of Virginia</a></p>
+	    <p><a href="https://github.com/vpnagraj/"><img src="images/github-mark.png"
+							   alt="Github profile"></a>
+	      <a href="https://twitter.com/vpnagraj"><img src="images/twitter.png" alt="Twitter profile"
+							  width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant katie-planey">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Katie Planey</h3>
+	    <p class="participant-affiliation"><a href="http://metabiota.com/">Metabiota</a></p>
+	    <p><a href="https://www.linkedin.com/in/katieplaney" title="Katie Planey">// website</a></p>
+	    <p><a href="https://github.com/kplaney"><img src="images/github-mark.png" alt="Github
+											   profile"></a></p>
+	  </div>
+
+	  <div class="participant jonathan-polonsky">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Jonathan Polonsky</h3>
+	    <p class="participant-affiliation"><a href="http://www.who.int/hac/en/">World Health Organisation</a></p>
+	    <p><a href="https://github.com/jpolonsky/"><img src="images/github-mark.png" alt="Github
+											      profile"></a><a href="https://twitter.com/jonny_polonsky"><img src="images/twitter.png" alt="Twitter profile"
+																			     width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant nistara-randhawa">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Nistara Randhawa</h3>
+	    <p class="participant-affiliation"> <a href="http://www.vetmed.ucdavis.edu/ohi/">UC
+	    Davis One Health Institute</a></p>
+	    <p><a href="http://nistara.net" title="Nistara Randhawa">// website</a></p>
+	    <p><a href="https://github.com/nistara"><img src="images/github-mark.png" alt="Github
+											   profile"></a>
+	  </div>
+
+	  <div class="participant isabel-rodriguez">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Isabel Rodriguez</h3>
+	    <p class="participant-affiliation"> <a href="http://www.jhsph.edu/faculty/directory/profile/3114/isabel-rodr-guez-barraquer">Johns Hopkins - Blomberg School of Public Health</a></p>
+	    <p><a href="https://twitter.com/isabelrodbar"><img src="images/twitter.png" alt="Twitter profile"
+	    width="35px" height="35px"></a></p>
+	  </div>
+
+	  <div class="participant ilana-schafer">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Ilana Schafer</h3>
+	    <p><a>[co-organizer]</a></p>
+	    <p class="participant-affiliation"> <a href="http://www.cdc.gov">Centers for Disease Control and Prevention </a></p>
+	    <!--   <a href="https://twitter.com/IlanaSchafer"><img src="images/twitter.png" alt="Twitter profile" -->
+	    <!-- width="35px" height="35px"></a></p> -->
+	  </div>
+
+	  <div class="participant armand-sprecher">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Armand Sprecher</h3>
+	    <p class="participant-affiliation"> <a href="http://msf-azg.be/fr">Médecins Sans Frontières</a></p>
+	    <p><a href="https://twitter.com/agsprecher"><img src="images/twitter.png" alt="Twitter
+											   profile" width="35px" height="35px"></a>
+	  </p>  </div>
+
+
+	  <div class="participant bertrand-sudre">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Bertrand Sudre</h3>
+            <p class="participant-affiliation"><a href="http://ecdc.europa.eu/en/Pages/home.aspx">European
+		Center for Disease Control and Prevention</a></p>
+	    <p><a href="http://e3geoportal.ecdc.europa.eu/SitePages/Home.aspx" title="Bertrand Sudre">// website</a></p>
+	  </div>
+
+	  <div class="participant robin-thompson">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Robin Thompson</h3>
+	    <p class="participant-affiliation"> <a href="http://evolve.zoo.ox.ac.uk/Evolve/Home.html">University
+		of Oxford</a></p>
+	    <p><a href="https://robin-thompson.co.uk" title="Robin Thompson">// website</a></p>
+	    <p><a href="https://github.com/robin-thompson  "><img src="images/github-mark.png" alt="Github
+												    profile"></a>
+	      <a href="https://twitter.com/robinnthompson"><img src="images/twitter.png" alt="Twitter profile" width="35px" height="35px"></a>
+	    </p>
+	  </div>
+
+	  <div class="participant james-tyson">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">James Tyson</h3>
+	    <p class="participant-affiliation"> <a href="http://www.cdc.gov">Centers for Disease Control and Prevention </a></p>
+	  </div>
+
+	  <div class="participant rolina-van-gaalen">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Rolina Van Gaalen</h3>
+	    <p class="participant-affiliation">
+	    <p class="participant-affiliation"><a href="http://www.rivm.nl/en/">National Institute for Public Health and the Environment</a> (The Netherlands) </p>
+	    <a href="https://nl.linkedin.com/in/rolinavangaalen" title="Rolina Van Gaalen">// website</a></p>
+	  </div>
+
+	  <div class="participant maria-van-kerkhove">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Maria Van-Kerkhove</h3>
+	    <p><a>[co-organizer]</a></p>
+	    <p class="participant-affiliation"><a href="https://research.pasteur.fr/en/member/maria-van-kerkhove/">Institut Pasteur</a></p>
+	    <a href="https://twitter.com/mvankerkhove"><img src="images/twitter.png" alt="Twitter profile"
+							    width="35px" height="35px"></a></p>
+	  </div>
+	  
+	  <div class="participant edwin-van-leeuwen">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Edwin Van Leuuwen</h3>
+	    <p class="participant-affiliation">
+	      <a href="https://www.gov.uk/government/organisations/public-health-england">Public Health
+		England</a></p>
+	    <p><a href="https://uk.linkedin.com/in/edwin-van-leeuwen-6b7578aa" title="Edwin Van-Leuuwen">// website</a></p>
+	    <p><a href="https://github.com/BlackEdder"><img src="images/github-mark.png" alt="Github
+											      profile"></a></p>
+	  </div>
+
+	  <div class="participant jacco-wallinga">
+	    <div class="participant-image"></div>
+	    <h3 class="participant-name">Jacco Wallinga</h3>
+	    <p><a>[co-organizer]</a></p>
+	    <p class="participant-affiliation"><a href="http://www.rivm.nl/en/About_RIVM/Knowledge_and_expertise/Experts_and_expertise/Related_information/Modelling_Infectious_Diseases/J_Jacco_Wallinga_PhD">National Institute for Public Health and the Environment</a>
+	      (The Netherlands) & <a href="https://www.lumc.nl/org/msbi/medewerkers/1216699">Leiden University Medical Center</a></p>
+	    <!-- <p><img src="images/github-mark.png" alt="Github -->
+	    <!-- profile"> -->
+	    <!-- <a href="https://twitter.com/MarcBaguelin"><img src="images/twitter.png" alt="Twitter profile" -->
+	    <!-- width="35px" height="35px"></a></p> -->
+</div>
+
+	  <div class="participant oliver-watson">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Oliver Watson</h3>
+            <p class="participant-affiliation"><a href="http://www.imperial.ac.uk/">Imperial College London</a></p>
+            <p><a href="github.com/OJWatson"><img src="images/github-mark.png"
+							alt="Github profile"></a>
+	    </p>
+	  </div>
+
+<div class="participant nicole-white">
+  <div class="participant-image"></div>
+  <h3 class="participant-name">Nicole White</h3>
+  <p class="participant-affiliation"><a href="http://neo4j.com/blog/contributor/nicole-white/">Neo4j</a></p>
+  <p><a href="http://nicolewhite.github.io/" title="Nicole White">// website</a></p>
+  <p><a href="https://github.com/nicolewhite"><img src="images/github-mark.png" alt="Github
+										     profile"></a>
+    <a href="https://twitter.com/_nicolemargaret"><img src="images/twitter.png" alt="Twitter profile"
+						       width="35px" height="35px"></a></p>
+</div>
+
+
+   <div class="participant dani-ushizima">
+     <div class="participant-image"></div>
+     <h3 class="participant-name"><a href="http://vis.lbl.gov/~daniela/">Dani Ushizima</a></h3>
+     <p class="participant-affiliation">Lawrence Berkeley National Laboratory</p>
+   </div>
+
+
+<!--
+    If your PR is adding a new participant, just copy a single div block above and add the appropriate information. You'll also need to add a css class in style/main.css for the participant-image. See instructions in that file.
+
+    If you want to include a short abstract about yourself, or links to relevant work, add this below the participant-affiliation tag. But not necessary and if you do, please keep it super short.
+
+    <p class="participant-abstract">You can write something about yourself here.</p>
+
+    -->
+</div>
+</div>
+</section>
+
+<!-- This is the section where people can apply to attend/request support -->
+
+<a name="apply" class="section-jump"> </a>
+<div class="apply-wrap">
+  <section class="apply">
+    <div class="title-col">
+      <h2>Join us!</h2>
+      <p  class="byline-italic">Applications closed on April 15th, 2016<span class="supp-nocolor">th</span></p>
+    </div>
+    <div class="further-col">
+      <div class="participant-row">
+	<br> • We want to: create the next generation of free, open-source tools for <i>disease outbreak
+	  response</i>.
+	<br>
+	<br> • We are looking for: <i>infectious disease modellers, statisticians, public health
+	  workers, programmers, web developers, database experts...</i>
+	<br>
+	<br> • We aim to: maximize <i>diversity in skills, experiences, and people</i>.
+	<br>
+        <br> • Applications closed on the 15th April 2016.
+	<br>
+      </div>
+    </div>
+</div>
+</section>
+
+<!-- This is the section where we provide more info about the Data Science Social. -->
+
+<a name="venue" class="section-jump"> </a>
+
+<section class="setting">
+  <div class="title-col">
+    <h2 class="intro-offset">The Venue</h2>
+    <p>
+      <i>Hackout 3</i> will be hosted at the <a href="http://bids.berkeley.edu/">Berkeley
+	Institute for Data Science</a>. Follow
+      the <a href="http://bids.berkeley.edu/about/directions-and-travel">official directions</a>, or
+      see the map below:
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3149.490599145154!2d-122.259493!3d37.872208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c4c871172ae1c6b!2sDoe+Library!5e0!3m2!1sen!2sus!4v1456160315597"
+	    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <p><i>Accommodation</i></p><br>
+    <p>Funded participants will be hosted at
+      the <a href="http://doubletree3.hilton.com/en/hotels/california/doubletree-by-hilton-hotel-berkeley-marina-JBKCADT/index.html">DoubleTree
+	Hilton Hotel in the Marina, Berkeley</a>. The hotel is about 10-15 min by taxi to the
+      venue.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12598.494334170926!2d-122.3139356!3d37.8690971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf5a561eb46d7a98!2sDoubleTree+by+Hilton+Hotel+Berkeley+Marina!5e0!3m2!1sen!2suk!4v1463412220056" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+</section>
+
+<section class="schedule-wrap">
+  <div class="title-col">
+    <a name="schedule" class="section-jump"> </a>
+    <h2>Schedule of events</h2>
+    <p>
+      <i>Hackout 3</i> will be a five-days event, including a first day of brainstorming, leaving most of
+      the rest of the time for developing tools, discussing methods, and testing new approaches. The
+      Wednesday afternoon will be free, with possibility of a group hike for participants interested
+      in seeing a bit of the nature surrounding Berkeley.
+    </p>
+      <br>
+    <p>
+      Programme:
+      <br>
+      <i>Every day will start with breakfast at 9-10am and finish at 6pm. Lunch will be served around 12:30.</i>
+      <ul>
+	<li><b> • Day 1 (Monday 20th June): </b> welcoming participants, introductory talks
+	  (T. Jombart / I. Damon / A. Sprecher / A. Cori / K. Ram), brainstorming, splitting into
+	  teams</li>
+	<li><b> • Day 2 (Tuesday 21th June): </b> technical bootcamps, coding</li>
+	<li><b> • Day 3 (Wednesday 22th June): </b> coding (morning); social event / free time (afternoon)
+	<li><b> • Day 4 (Thursday 23th June): </b> coding </li>
+	<li><b> • Day 5 (Friday 24th June): </b> coding, planning, concluding remarks  </li>
+      </ul>
+    </p>
+    
+
+
+    <!-- <p>All unconference ideas will begin as GitHub issues on the <a href="https://github.com/ropensci/unconf16/issues/" title="Issues · ropensci/unconf16 · GitHub">unconf repo</a> a few weeks before the event. However, the actual schedule will not be decided until the morning of the 31st. You can see some of the <a href="https://github.com/ropensci/unconf/issues" title="Issues · ropensci/hackathon · GitHub">projects proposed</a> for last year's event. The schedule will be updated here once ready.</p> -->
+  </div>
+</div>
+</section>
+
+
+<section class="sponsors">
+  <div class="title-col">
+    <a name="sponsors" class="section-jump"> </a>
+    <h2>The Sponsors</h2>
+    
+    <p>We are extremely grateful to our sponsors for this third instance of <i>Hackout</i>.
+      <br>
+      <br>
+      
+      <!-- <font size="2"> -->
+      <i>Hackout 3</i> is co-supported by:
+      <ul>
+	<li> • the NIHR’s Modelling Methodology Health Protection Research Unit at
+	  Imperial College London (HPRU-2012-10080)</li>
+	<br>
+	
+	<li> • MRC Centre for Outbreak Analysis, and Modelling at Imperial College London (MR/K010174/1B)</li>
+      </ul>
+      <!-- </font> -->
+
+    </p>
+    If you would like to sponsor <i>Hackout 3</i>, please contact us via <a href="mailto:thibautjombart@gmail.com?Subject=Hackout3%20sponsor" target="_top">email</a>.</p>
+</div>
+<div class="further-col">
+  <!-- <h2>Platinum Sponsors</h2> -->
+  <a href="https://www1.imperial.ac.uk/publichealth/departments/ide/outbreaks/background/"><img src="images/sponsors/logo-mrc.jpg"
+												alt="MRC COAM logo"></a>
+  <br>
+  <a href="https://www1.imperial.ac.uk/publichealth/"><img src="images/sponsors/logo-icl.jpg" alt="Imperial College London logo"></a>
+  <br>
+  <a href="http://bids.berkeley.edu/"><img src="images/sponsors/bids-logo.png" alt="Berkeley Institute for Data Science logo"></a>
+  <br>
+</div> 
+</section>
+--
+
+
+<!-- Footer -->
+
+<footer>
+  <div class="foot-wrap">
+    <p>Contact <a href="mailto:thibautjombart@gmail.com?Subject=Hackout3%20question" target="_top">Thibaut Jombart</a> for more information about
+      the event. This page is hosted on <a href="https://github.com/Hackout3/hackout3.github.io/">
+	github</a>. Comments and suggestions are welcome
+      as <a href="https://github.com/Hackout3/Hackout3.github.io/issues">issues</a> or <a href="https://github.com/Hackout3/Hackout3.github.io/compare?expand=1">pull requests</a>.
+      <!-- <p>Contact <a href="http://ropensci.org/contact.html">info at ropensci org</a> for more information about the event. This page is available at <a href="https://github.com/ropensci/unconf16/tree/gh-pages">this repo</a>. Corrections, changes, and suggestions for improvement are welcome as pull requests.</p> -->
+  </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+</body>
+</html>
