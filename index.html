@@ -28,8 +28,8 @@
       <img src="images/banner.jpg" alt="banner" class="intro-image-small">
 
       <nav class="site-nav">
+	<a href="#overview" class="nav-link">Overview</a>
 	<a href="#participants" class="nav-link">People</a>
-	<a href="#projects" class="nav-link">Projects</a>
 	<a href="#sponsors" class="nav-link">Sponsors</a>
 	<a href="http://www.repidemicsconsortium.org/" class="nav-link">RECON</a>
       </nav>
@@ -40,12 +40,26 @@
     <div class="intro-wrap">
       <section class="intro">
 	<div class="title-col">
+	  <a name="overview" class="section-jump"> </a>
 	  <h2 class="intro-offset">Making outbreak analysis easier and prettier</h2>
 	  <p>
-	    The aims of this small, secretive hackfest will be to develop tools
-	    to make RECON packages more transparent, user-friendly, and
-	    prettier. Exact projects and participants will be made public as the
-	    event unfolds. Watch this space for updates...
+	    This micro-hackfest was dedicated to designing web-based graphical
+	    user interfaces (someone said 'shiny'?) for RECON packages. We
+	    focussed on facilitating the user experience, by defining some sort
+	    of standard look-and-feel, and on facilitating the development of
+	    these interfaces. In a nutshell, outcomes include:
+	    <ul>
+	      <li>&#9899 some new shiny modules for data import in the
+	      new <a href="https://github.com/reconhub/shinyHelpers">shinyHelpers</a>
+	      package</li>
+	      <li>&#9899 the new
+	      package <a href="https://github.com/reconhub/recon.ui">recon.ui</a>
+	      providing templating for shiny interfaces for RECON packages</li>
+	      <li>&#9899 a new shiny interface for the incidence
+	      package: <a href="https://github.com/reconhub/incidence.ui">incidence.ui</a></li>
+	      <li>&#9899 a new shiny interface for the epicontacts
+	      package: <a href="https://github.com/reconhub/epicontacts.ui">epicontacts.ui</a></li>
+	    </ul>
 	  </p>
 	</div>
       </section>
@@ -60,36 +74,79 @@
       <div class="further-col">
 	<div class="participant-row">
 
-	  <div class="participant anonymous">
+	  <div class="participant dean-attali">
             <div class="participant-image"></div>
-            <h3 class="participant-name">Anonymous coder 1</h3>
+            <h3 class="participant-name">Dean Attali</h3>
+	    <p>/// Absolute shiny guru, module writing (shinyHelpers), templating (recon.ui).</p>
+	    <p><a href="http://deanattali.com/" title="Dean Attali">// website</a></p>
+	    <p><a href="https://github.com/daattali"><img src="images/github-mark.png" alt="Github
+											    profile"></a>
+	      <a href="https://twitter.com/daattali"><img src="images/twitter.png" alt="Twitter profile"
+							  width="35px" height="35px"></a></p>
 	  </div>
+
+
+
+	  <div class="participant dirk-schumacher">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Dirk Schumacher</h3>
+	    <p>/// Certified shiny black-belt (1st degree), epicontacts.ui, templating.</p>
+	    <p><a href="https://www.dirk-schumacher.net/" title="Dirk Schumacher">// website</a></p>
+	    <p><a href="https://github.com/dirkschumacher/"><img src="images/github-mark.png"
+								 alt="Github profile"></a>
+	      <a href="https://twitter.com/dirk_sch"><img src="images/twitter.png" 
+							alt="Twitter profile" width="35px" height="35px"></a></p>
+	  </div>
+
+
+
+	  <div class="participant thibaut-jombart">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Thibaut Jombart</h3>
+	    <p>/// Organiser, shiny blue-belt, naive questions, incidence.ui</p>
+	    <p class="participant-affiliation"><a href="http://www.imperial.ac.uk/people/t.jombart">Imperial
+		College London</a></p>
+	    <p><a href="https://sites.google.com/site/thibautjombart/" title="Thibaut
+									      Jombart">// website</a></p>
+	    <p><a href="https://github.com/thibautjombart/"><img src="images/github-mark.png"
+								 alt="Github profile"></a>
+	      <a href="https://twitter.com/TeebzR"><img src="images/twitter.png" 
+							alt="Twitter profile" width="35px" height="35px"></a></p>
+	  </div>
+
+
+
+	  <div class="participant rich-fitzjohn">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">Rich FitzJohn</h3>
+	    <p>/// Initial discussions and curbing of enthusiasm, R wisdom, coffee breaks.</p>
+            <p class="participant-affiliation">Imperial College
+              London, <a href="http://ropensci.org">rOpenSci (UK)</a></p>
+	    <p><a href="http://richfitz.github.io/" title="Rich FitzJohn">// website</a></p>
+	    <p><a href="https://github.com/richfitz/"><img src="images/github-mark.png" alt="Github
+											     profile"></a>
+	      <a href="https://twitter.com/rgfitzjohn"><img src="images/twitter.png" alt="Twitter profile"
+							    width="35px" height="35px"></a></p>
+	  </div>
+
+
 
 	  <div class="participant anonymous">
             <div class="participant-image"></div>
-            <h3 class="participant-name">Anonymous coder 2</h3>
+            <h3 class="participant-name">Jack Olney</h3>
+	    <p>/// Initial discussions, Copperfieldian disappearances.</p>
+            <p class="participant-affiliation">Imperial College London</p>
 	  </div>
 
-	  <div class="participant anonymous">
-            <div class="participant-image"></div>
-            <h3 class="participant-name">Anonymous coder 3</h3>
-	  </div>
- 
-	  <div class="participant anonymous">
-            <div class="participant-image"></div>
-            <h3 class="participant-name">Anonymous coder 4</h3>
-	  </div>
-	   
-	  <div class="participant anonymous">
-            <div class="participant-image"></div>
-            <h3 class="participant-name">Anonymous coder 5</h3>
-	  </div>
-	   
-	  <div class="participant anonymous">
-            <div class="participant-image"></div>
-            <h3 class="participant-name">Anonymous coder 6</h3>
-	  </div>
 
+
+	  <div class="participant james-hayward">
+            <div class="participant-image"></div>
+            <h3 class="participant-name">James Hayward</h3>
+	    <p>/// Logistics magic and admin awesomeness</p>
+	    <p class="participant-affiliation"><a href="https://www1.imperial.ac.uk/publichealth/departments/ide/outbreaks/">MRC
+		Centre for Outbreak Analysis and Modelling</a>, Imperial College London</p>
+	  </div>
 	  
 	</div>
       </div>

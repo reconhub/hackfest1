@@ -550,8 +550,12 @@ font-weight: 700;
   background: url("../images/participants/rich-fitzjohn.jpg") no-repeat;
   background-size: cover; }
 
-.jonathan-polonsky .participant-image {
-  background: url("../images/participants/jonathan-polonsky.jpg") no-repeat;
+.dirk-schumacher .participant-image {
+  background: url("../images/participants/dirk-schumacher.jpg") no-repeat;
+  background-size: cover; }
+
+.james-hayward .participant-image {
+  background: url("../images/participants/james-hayward.jpg") no-repeat;
   background-size: cover; }
 
 /*To add new participants, create a class like the ones above.
